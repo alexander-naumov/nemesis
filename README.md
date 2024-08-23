@@ -101,8 +101,9 @@ The [GNU Configure & Build][buildsystem] system use `/usr/local` as the
 default install prefix.  Usually this is sufficient, the below example
 installs to `/usr` instead:
 
-    tar xf nemesis-1.7.tar.xz
-    cd nemesis-1.7/
+    wget https://github.com/libnet/nemesis/releases/download/v1.8/nemesis-1.8.tar.gz
+    tar xf nemesis-1.8.tar.gz
+    cd nemesis-1.8/
     ./configure --prefix=/usr
     make -j5
     sudo make install-strip
